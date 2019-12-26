@@ -1,0 +1,12 @@
+.body-layout{
+  z-index: 5;
+  width: 100%;
+  overflow-y: scroll;
+  &-footer{
+    text-align: center;
+    padding: 0 16px 24px 16px;
+    &-icon{
+      margin: 0 8px;
+    }
+  }
+}

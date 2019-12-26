@@ -66,8 +66,8 @@ service.interceptors.response.use(
       }
     })
   },
-  (error) => {
-    return Promise.reject('网络异常')
+  () => {
+    return Promise.reject(new Error('网络异常'))
   }
 )
 

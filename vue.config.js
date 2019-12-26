@@ -17,5 +17,24 @@ module.exports = {
      * ---
      */
     config.resolve.alias.set('@$', path.join(__dirname, 'src'))
+  },
+  css: {
+    /**
+     * 向预处理器中的 option 属性传递参数
+     * ---
+     * @doc https://cli.vuejs.org/guide/css.html#passing-options-to-pre-processor-loaders
+     * ---
+     */
+    loaderOptions: {
+      sass: {
+        /**
+         * 全局混入
+         * ---
+         * @doc https://github.com/webpack-contrib/sass-loader#prependdata
+         * ---
+         */
+        prependData: '@import "@/style/global.scss";'
+      }
+    }
   }
 }

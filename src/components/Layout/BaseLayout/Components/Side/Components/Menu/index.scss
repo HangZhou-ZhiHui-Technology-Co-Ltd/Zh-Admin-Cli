@@ -1,0 +1,13 @@
+.sider-layout-menu{
+  &-todo{
+    color: #FFF;
+    float: right;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: red;
+    padding: 0 12px;
+    @include middle;
+    border-radius: 5px;
+  }
+}

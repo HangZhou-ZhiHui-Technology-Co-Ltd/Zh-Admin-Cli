@@ -1,0 +1,13 @@
+.side-action{
+  width: 64px;
+  height: 64px;
+  @include middle;
+  transition: all .3s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, .03);
+  }
+  &-icon{
+    font-size: 20px;
+  }
+}

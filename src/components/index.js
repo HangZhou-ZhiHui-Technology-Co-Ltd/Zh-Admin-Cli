@@ -1,4 +1,4 @@
-import Advice from './Common/ZHAdvice'
+import Advice from './Common/ZhAdvice'
 
 /**
  * 自定义组件
