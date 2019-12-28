@@ -1,23 +1,20 @@
 <template>
-  <div class="zh-advice">
-
+  <div class="base-layout-btn">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'zh-advice',
-  mixins: [
-  ],
+  name: '',
   components: {
   },
-  methods: {
-  },
-  computed: {
+  data () {
+    return {
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  @import './index.scss';
+  @import "./index.scss";
 </style>

@@ -1,9 +1,9 @@
 import Advice from './Common/ZhAdvice'
 
 /**
- * 自定义组件
+ * 通用组件
  */
-export const components = [
+const components = [
   Advice
 ]
 

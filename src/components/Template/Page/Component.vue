@@ -6,10 +6,11 @@
 <script>
 export default {
   name: '',
-  mixins: [
-  ],
+  props: {},
   components: {
   },
+  mixins: [
+  ],
   methods: {
   },
   computed: {

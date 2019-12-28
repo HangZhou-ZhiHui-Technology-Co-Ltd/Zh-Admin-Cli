@@ -5,9 +5,7 @@
 
 <script>
 export default {
-  name: 'side-layout',
-  components: {
-  }
+  name: 'side-layout'
 }
 </script>
 

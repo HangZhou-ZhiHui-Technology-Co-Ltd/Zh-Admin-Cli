@@ -1,8 +1,22 @@
 <template>
   <div class="bh">
-    <router-view />
+    <a-locale-provider :locale="locale">
+      <router-view />
+    </a-locale-provider>
   </div>
 </template>
+
+<script>
+import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN'
+export default {
+  name: 'app',
+  data () {
+    return {
+      locale: zhCN
+    }
+  }
+}
+</script>
 
 <style lang="scss">
   .bw {
@@ -16,5 +30,8 @@
   }
   .fr {
     float: right;
+  }
+  .dmb{
+    margin-bottom: 24px!important;
   }
 </style>

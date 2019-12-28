@@ -8,10 +8,7 @@ const routes = [
     path: '/',
     component: () => import('@/components/Layout/BaseLayout'),
     children: [
-      {
-        path: '/',
-        component: () => import('@/views/Components/ZhAdvice')
-      }
+
     ]
   }
 ]

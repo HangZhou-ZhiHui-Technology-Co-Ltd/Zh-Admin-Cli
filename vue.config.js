@@ -7,6 +7,12 @@
 const path = require('path')
 
 module.exports = {
+  /**
+   * 保存时是否检查代码风格
+   * ---
+   * @doc https://cli.vuejs.org/zh/config/#lintonsave
+   * ---
+   */
   lintOnSave: true,
   chainWebpack: (config) => {
     /**
