@@ -20,7 +20,7 @@ export default {
      * 文字
      */
     _text () {
-      return this.$store.state.menu.open ? 'ZhiHui Admin' : 'ZH'
+      return this.$store.state.menu.open ? 'ZhiHui Admin Pro' : 'QC'
     }
   }
 }

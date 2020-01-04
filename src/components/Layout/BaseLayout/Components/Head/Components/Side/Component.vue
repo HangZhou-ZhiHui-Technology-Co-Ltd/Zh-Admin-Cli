@@ -1,5 +1,5 @@
 <template>
-  <div @click="_vary()" class="side-action">
+  <div @click="_vary()" class="side-action hover-top-bar-unfocus">
     <a-icon :type="_icon" class="side-action-icon" />
   </div>
 </template>

@@ -1,0 +1,55 @@
+@mixin action {
+  transition: all .3s;
+  box-sizing: border-box;
+  &:hover{
+    cursor: pointer;
+    background: #f6f6f6;
+  }
+}
+
+.tag-nav{
+  z-index: 8;
+  height: 40px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
+  &-wrap{
+    left: 40px;
+    right: 80px;
+    height: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+  &-action{
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 100%;
+    @include middle;
+    font-size: 16px;
+    position: absolute;
+    &-east{
+      left: 0;
+      @include action;
+      border-right: 1px solid #f6f6f6;
+    }
+    &-head{
+      left: 40px;
+      @include action;
+      border-right: 1px solid #f6f6f6;
+    }
+    &-west{
+      right: 40px;
+      @include action;
+      border-left: 1px solid #f6f6f6;
+    }
+    &-menu{
+      right: 0;
+      @include action;
+      border-left: 1px solid #f6f6f6;
+    }
+  }
+}

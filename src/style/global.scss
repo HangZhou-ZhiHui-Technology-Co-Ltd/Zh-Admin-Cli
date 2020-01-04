@@ -15,12 +15,37 @@
   justify-content: space-between;
 }
 
-// ===== ===== ===== ===== ===== ===== 文档 ===== ===== ===== ===== ===== =====
+// ===== ===== ===== ===== ===== ===== ===== ===== 顶部滚动条 ===== ===== ===== ===== ===== ===== =====
 
-.base-layout-all {
-  padding: 24px;
+@mixin hover-top-bar{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background: #000;
 }
 
-.base-layout-btn {
-  padding: 24px 24px 0 24px;
+.hover-top-bar-focus {
+  background: #f6f6f6;
+  &::before {
+    @include hover-top-bar;
+  }
+}
+
+.hover-top-bar-unfocus {
+  &::before{
+    transform: scaleX(0);
+    @include hover-top-bar;
+    transform-origin: 100% 0;
+    transition: transform .3s;
+  }
+  &:hover{
+    background: #f6f6f6;
+    &::before{
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
 }

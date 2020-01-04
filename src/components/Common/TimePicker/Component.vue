@@ -55,7 +55,7 @@ export default {
      * 不可选择时间
      */
     disabledDate: {
-      type: Function      
+      type: Function
     }
   },
   data () {

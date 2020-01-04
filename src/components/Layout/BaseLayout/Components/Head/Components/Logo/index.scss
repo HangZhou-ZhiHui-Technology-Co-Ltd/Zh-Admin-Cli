@@ -1,9 +1,9 @@
 .head-logo {
   color: #FFF;
   @include middle;
-  font-size: 20px;
-  background: #002240;
+  font-size: 16px;
+  line-height: 50px;
+  background: #20222a;
   white-space : nowrap;
   transition: width .2s;
-  box-shadow: 2px 0 6px rgba(0,21,41,.35);
 }

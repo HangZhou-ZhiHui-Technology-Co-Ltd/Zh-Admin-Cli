@@ -14,7 +14,7 @@ export default {
      * 宽度
      */
     MENU_WIDTH ({ open }) {
-      return open ? 256 : 80
+      return open ? 220 : 80
     }
   },
   mutations: {

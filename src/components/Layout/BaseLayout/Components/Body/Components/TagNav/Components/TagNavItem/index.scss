@@ -1,0 +1,18 @@
+.tag-nav-item{
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 16px;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+  border-right: 1px solid #f6f6f6;
+  &-text{
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  &-close{
+    color: #c2c2c2;
+    font-size: 14px;
+    border-radius: 50%;
+  }
+}

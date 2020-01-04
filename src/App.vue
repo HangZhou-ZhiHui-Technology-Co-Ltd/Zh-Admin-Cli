@@ -31,6 +31,9 @@ export default {
   .fr {
     float: right;
   }
+  .bmr{
+    margin-right: 8px!important;
+  }
   .dmb{
     margin-bottom: 24px!important;
   }

@@ -4,12 +4,17 @@ module.exports = {
     node: true
   },
   'extends': [
-    'plugin:vue/essential',
-    '@vue/standard'
+    '@vue/standard',
+    'plugin:vue/essential'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    /**
+     * 关闭 - 骆驼拼写法
+     * ---
+     * @doc https://eslint.bootcss.com/docs/rules/camelcase/
+     * ---
+     */
+    'camelcase': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'
